@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web bán đồ đùng học tập</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logo.webp" alt="Logo" class="logo">
+            <h1>Chào mừng đến với Web bán đồ đùng học tập</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="products.html">Sản Phẩm</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+                <li><a href="cart.html">Giỏ Hàng</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h2>Chào mừng đến với cửa hàng đồ dùng học tập</h2>
+                <p>Khám phá bộ sưu tập đồ dùng học tập chất lượng cao với giá cả hợp lý. Từ bút viết đến dụng cụ vẽ, chúng tôi có mọi thứ bạn cần cho việc học tập hiệu quả!</p>
+                <a href="products.html" class="btn hero-btn">Xem Sản Phẩm</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/school supplies.jpg" alt="School supplies" >
+            </div>
+        </section>
+
+        <section id="featured">
+            <h2>Sản Phẩm Nổi Bật</h2>
+            <div class="product-grid">
+                <article class="product-card" data-id="1" data-name="Bút Bi" data-price="15000" data-image="images/pen.jpg">
+                    <img class="img" src="images/pen.jpg" alt="Bút Bi">
+                    <div class="card-content">
+                        <h3>Bút Bi</h3>
+                        <p class="desc">Bút bi mượt, nhiều màu, phù hợp học sinh.</p>
+                        <p class="price">15.000 VND</p>
+                        <button class="btn add-to-cart-btn" data-id="1">Thêm vào giỏ</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-id="2" data-name="Tập vở" data-price="20000" data-image="images/notebooks.jpg">
+                    <img class="img" src="images/notebooks.jpg" alt="Tập vở">
+                    <div class="card-content">
+                        <h3>Tập vở</h3>
+                        <p class="desc">Tập vở kẻ ngang, giấy dày, bìa màu sắc.</p>
+                        <p class="price">20.000 VND</p>
+                        <button class="btn add-to-cart-btn" data-id="2">Thêm vào giỏ</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-id="5" data-name="Bút chì" data-price="5000" data-image="images/pencil.jpg">
+                    <img class="img" src="images/pencil.jpg" alt="Bút chì">
+                    <div class="card-content">
+                        <h3>Bút chì</h3>
+                        <p class="desc">Bút chì HB, dễ gọt, viết êm.</p>
+                        <p class="price">5.000 VND</p>
+                        <button class="btn add-to-cart-btn" data-id="5">Thêm vào giỏ</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>Về Chúng Tôi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Chúng tôi là cửa hàng chuyên cung cấp đồ dùng học tập chất lượng cao với hơn 10 năm kinh nghiệm. Cam kết mang đến cho học sinh và giáo viên những sản phẩm tốt nhất với giá cả cạnh tranh.</p>
+                    <ul>
+                        <li>✅ Sản phẩm chính hãng, chất lượng đảm bảo</li>
+                        <li>✅ Giao hàng nhanh chóng trên toàn quốc</li>
+                        <li>✅ Hỗ trợ tư vấn chuyên nghiệp</li>
+                        <li>✅ Chính sách đổi trả linh hoạt</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Liên Hệ Với Chúng Tôi</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p>support@schoolsupplies.vn</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📞 Điện thoại</h3>
+                    <p>0123 456 789</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📍 Địa chỉ</h3>
+                    <p>123 Đường ABC, Quận XYZ, TP.HCM</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Web bán đồ dùng học tập. Tất cả quyền được bảo lưu.</p>
+    </footer>
+    <script src="cartUtils.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>
